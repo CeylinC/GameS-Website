@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameS - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <div class="logo">GAME<span>S</span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#store">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-5" id="home">
+      <div class="col">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/bg-3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h1 class="text-uppercase">%60'a varan bahar indirimi</h1>
+                <p class="text-capitalize d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloribus corrupti dolor molestias natus quasi veniam praesentium impedit iure voluptates?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bg-1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h1 class="text-uppercase text-black">Yayıncı indirim fırsatı</h1>
+                <p class="text-capitalize d-none d-lg-block text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloribus corrupti dolor molestias natus quasi veniam praesentium impedit iure voluptates?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bg-2.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h1 class="text-uppercase">hafta sonu fırsatı</h1>
+                <p class="text-capitalize d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, doloribus corrupti dolor molestias natus quasi veniam praesentium impedit iure voluptates?</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 mt-5">
+        <!--Kategori-->
+        <h4 class="text-white"><span onclick="hamburger()"><i class="fa fa-bars d-lg-none"></i></span> Category</h4>
+        <ul class="list-group list-group-flush d-lg-block">
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Top Sellers</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Most Popular</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Free Games</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Demo</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> On Sales</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> New Releases</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Coming Soon</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Adventure</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Action</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Horror</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> RPG</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Multiplayer</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Open World</a></li>
+          <li class="list-group-item"><a href="" class="text-white text-decoration-none"><i class="fa-solid fa-angle-right"></i> Platformer</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-9 mt-5" id="store">
+        <!--İçerik-->
+        <h4 class="text-white">New Games</h4>
+        <div class="cards">
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/amogusportrait_1200x1600-66ad0e4d363e1c92f9f8aae67a96dd31?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Among Us</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/offer/77f2b98e2cef40c8a7437518bf420e47/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Cyberpunk 2077</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Red Dead Redemption II</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_FootballManager2022_SportsInteractive_S2_1200x1600-5377adfa5fd611bd6726995ece5b04ef?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Football Manager 2022</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/06903580-7100-4d12-93d8-9e7ed05c6387_1200x1600-2e12b3f5099c51b64c24da845373f91f?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Valorant</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_whileTruelearn_Ludenio_S2_1200x1600-f1259b2f801db59d751dd5e5076b6330?h=854&resize=1&w=640">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>while True: learn()</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+          <div class="kart">
+            <div class="kart-img">
+              <img src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820?h=480&resize=1&w=360">
+            </div>
+            <div class="add rounded-circle position-absolute top-0 end-0">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="kart-content mt-2 text-center text-white position-absolute">
+              <h6>Genshin Impact</h6>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, eligendi?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="mt-5 px-5">
+    <div class="row w-100">
+      <div class="col-md-8 mb-3 pe-md-5">
+        <h5>About Us</h5>
+        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, est? Blanditiis, non vero distinctio cum voluptas fugit est ducimus officia modi amet suscipit recusandae autem enim perferendis totam sit mollitia?
+          labore!</div>
+      </div>
+      <hr class="d-md-none text-white">
+      <div class="col-md-2 ps-md-5">
+        <h5>GameS</h5>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Store</a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <hr class="d-md-none text-white">
+      <div class="col-md-2">
+        <h5>Follow Us</h5>
+        <div class="social">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row w-100 d-flex justify-content-center mt-5">
+      <div class="col">
+        <hr class="text-white w-75 mx-auto">
+        <div class="telif clearfix">
+          <div class="logo ">
+            GAME<span>S</span>
+          </div>
+          <div class="telif-content">
+            © 2022 GameS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptas.
+          </div>
+        </div>
+        <hr class="text-white w-75 mx-auto">
+      </div>
+    </div>
+  </footer>
+  <script>
+    function hamburger(){
+      var x = document.querySelector(".list-group-flush");
+      if (x.style.display === "block"){
+      x.style.display = "none";
+      }
+      else{
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+
+</html>
